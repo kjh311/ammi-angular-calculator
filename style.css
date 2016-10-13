@@ -1,0 +1,11 @@
+body{
+  background-color: black;
+  text-align: center;
+}
+.box{
+  border: 2px solid red;
+  /*height: 100%;*/
+}
+input{
+  float: left;
+}
