@@ -17,32 +17,33 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-
+<script src="script.js"></script>
 
 </head>
-<body ng-app="" class="container">
+<body ng-app="myApp" class="container" ng-controller="myCtrl">
+
 
 <div class="row box">
   <h1>Ammi's Grading App</h1>
-  <div class="col-sm-4">
-    <h3># Correct</h3>
-    <input class="input-box" id="correct" type="text" placeholder="Enter # Correct Points">
+  <div class="col-sm-4 col-xs-12">
+    <h4># Correct</h4>
+    <input ng-model="correct" class="input-box" id="correct" type="text" placeholder="Enter # Correct Points">
   </div>
 
-  <div class="col-sm-4">
-    <h3># Possible</h3>
-      <input class="input-box" type="text" placeholder="Enter # of Points Possible">
+  <div class="col-sm-4 col-xs-12">
+    <h4># Possible</h4>
+      <input ng-model="possible" class="input-box" type="text" placeholder="Enter # of Points Possible">
   </div>
 
-  <div class="col-sm-4">
-    <h3>Multiplied by:</h3>
-      <input class="input-box" type="text" placeholder="Enter Multiplied by rate">
+  <div class="col-sm-4 col-xs-12">
+    <h4>Multiplied by:</h4>
+      <input ng-model="multiply" class="input-box" type="text" placeholder="Enter Multiplied by rate">
   </div>
 
   <div class="clearfix visible-sm"></div>
 
   <div class="col-xs-12 answer">
-    <h1>answer</h1>
+    <h1 class="final-answer">{{ (possible / correct) * multiply | number:2 }}</h1>
   </div>
 
 
