@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Ammi Grading Calculator</title>
   <link rel="stylesheet" href="style.css">
-
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Ruslan+Display" rel="stylesheet">
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -22,19 +22,34 @@
 </head>
 <body ng-app="" class="container">
 
-<div class="row">
-  <div class="col-xs-12 box">
-
-    <h1>Ammi's Grading App</h1>
-
-
-
-
-
-
-
+<div class="row box">
+  <h1>Ammi's Grading App</h1>
+  <div class="col-sm-4">
+    <h3># Correct</h3>
+    <input class="input-box" id="correct" type="text" placeholder="Enter # Correct Points">
   </div>
+
+  <div class="col-sm-4">
+    <h3># Possible</h3>
+      <input class="input-box" type="text" placeholder="Enter # of Points Possible">
+  </div>
+
+  <div class="col-sm-4">
+    <h3>Multiplied by:</h3>
+      <input class="input-box" type="text" placeholder="Enter Multiplied by rate">
+  </div>
+
+  <div class="clearfix visible-sm"></div>
+
+  <div class="col-xs-12 answer">
+    <h1>answer</h1>
+  </div>
+
+
+
 </div>
+
+
 
 </body>
 </html>
