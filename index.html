@@ -26,25 +26,25 @@
 
 <div class="row box">
   <h1>Ammi's Grading App</h1>
-  <div class="col-sm-4 col-xs-12">
+  <div class="col-sm-6 col-xs-12">
     <h4># Correct</h4>
     <input ng-model="correct" class="input-box" id="correct" type="text" placeholder="Enter # Correct Points">
   </div>
 
-  <div class="col-sm-4 col-xs-12">
+  <div class="col-sm-6 col-xs-12">
     <h4># Possible</h4>
       <input ng-model="possible" class="input-box" type="text" placeholder="Enter # of Points Possible">
   </div>
 
-  <div class="col-sm-4 col-xs-12">
+<!--   <div class="col-sm-4 col-xs-12">
     <h4>Multiplied by:</h4>
       <input ng-model="multiply" class="input-box" type="text" placeholder="Enter Multiplied by rate">
-  </div>
+  </div> -->
 
   <div class="clearfix visible-sm"></div>
 
   <div class="col-xs-12 answer">
-    <h1 class="final-answer">{{ (correct / possible) * multiply | number:1 }}</h1>
+    <h1 class="final-answer">{{ (correct / possible) * 4 | number:1 }}</h1>
   </div>
 
 
